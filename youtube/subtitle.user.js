@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         YouTube Subtitle Selector
 // @namespace    https://github.com/yurkth/userscripts
-// @version      0.1.0
+// @version      0.1.1
 // @description  YouTubeの動画に日本語字幕があればそれを選択、なければ自動翻訳の日本語を選択する
 // @author       torin
 // @match        https://www.youtube.com/watch*
+// @updateURL    https://github.com/yurkth/userscripts/raw/master/youtube/subtitle.user.js
+// @downloadURL  https://github.com/yurkth/userscripts/raw/master/youtube/subtitle.user.js
 // @license      MIT License
 // @grant        none
 // ==/UserScript==
