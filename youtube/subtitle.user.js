@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Subtitle Selector
 // @namespace    https://github.com/yurkth/userscripts
-// @version      0.1.2
+// @version      0.1.3
 // @description  YouTubeの動画に日本語字幕があればそれを選択、なければ自動翻訳の日本語を選択する
 // @author       torin
 // @match        https://www.youtube.com/watch*
@@ -55,7 +55,7 @@ function setSubtitleJapanese() {
 
       // 言語選択が読み込まれたらクリック
       new MutationObserver((mutations, observer) => {
-        let languages = [...document.querySelectorAll("div.ytp-menuitem-label")]
+        let languages = [...document.querySelectorAll("div.ytp-menuitem-label")];
         // 字幕に日本語が用意されている場合
         let japanese = languages.find(e => e.textContent === "日本語");
         if (japanese) {
