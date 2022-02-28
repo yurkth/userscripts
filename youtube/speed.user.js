@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         YouTube Speed Controller
 // @namespace    https://github.com/yurkth/userscripts
-// @version      0.1.0
+// @version      0.1.1
 // @description  YouTubeの動画に速度調整のボタンを追加する
 // @author       torin
 // @match        https://www.youtube.com/*
+// @updateURL    https://github.com/yurkth/userscripts/raw/master/youtube/speed.user.js
+// @downloadURL  https://github.com/yurkth/userscripts/raw/master/youtube/speed.user.js
 // @license      MIT License
 // @grant        GM.setValue
 // @grant        GM.getValue
