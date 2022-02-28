@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Speed Controller
 // @namespace    https://github.com/yurkth/userscripts
-// @version      0.1.1
+// @version      0.1.2
 // @description  YouTubeの動画に速度調整のボタンを追加する
 // @author       torin
 // @match        https://www.youtube.com/*
@@ -25,8 +25,9 @@
           addPlaybackRateButton(video);
         }
       }).observe(video, { attributes: true, attributeFilter: ['src'] });
+
+      observer.disconnect();
     }
-    observer.disconnect();
   }).observe(document, { childList: true, subtree: true });
 
 })();
@@ -72,7 +73,7 @@ async function addPlaybackRateButton(video) {
   <div class="speed-down">－</div>
   <div class="speed-up">＋</div>
 </div>`);
-    
+
     // 倍率をクリックしてリセット
     document.querySelector("div.playback-rate").addEventListener("click", () => {
       setPlaybackRate(video, 1.0);
