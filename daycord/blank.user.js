@@ -8,6 +8,7 @@
 // @updateURL    https://github.com/yurkth/userscripts/raw/master/daycord/blank.user.js
 // @downloadURL  https://github.com/yurkth/userscripts/raw/master/daycord/blank.user.js
 // @license      MIT License
+// @icon         https://character-sheets.appspot.com/schedule/images/favicon.ico
 // @resource     bulma-switch-control https://cdn.jsdelivr.net/npm/bulma-switch-control@1.2.2/css/main.min.css
 // @grant        GM.getResourceText
 // @grant        GM.addStyle
