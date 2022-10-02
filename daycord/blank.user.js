@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Daycord Blank Column Switcher
 // @namespace    https://github.com/yurkth/userscripts
-// @version      0.1.0
+// @version      0.1.1
 // @description  デイコードで日程を入力していない人の列を非表示にするトグルを追加する
 // @author       torin
 // @match        https://character-sheets.appspot.com/schedule/list?key=*
