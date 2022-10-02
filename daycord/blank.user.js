@@ -46,7 +46,7 @@ function switchDisplay(isDisplay) {
 
 function switchDisplayAll(isDisplay) {
   // 名前が入ったセルを取得
-  let members = document.querySelectorAll("th:not([rowspan]):has(.namelink)");
+  let members = document.querySelectorAll("th:not([rowspan]) > .namelink");
   let blankColumnCount = 0;
 
   // それぞれの列について、すべてのセルが未入力なら非表示にする
@@ -54,7 +54,7 @@ function switchDisplayAll(isDisplay) {
     let column = document.querySelectorAll(`tbody > tr > td:nth-last-child(${members.length - index})`);
     let isBlankColumn = Array.from(column).every(cell => cell.firstElementChild.textContent == '－');
     if (isBlankColumn) {
-      switchDisplay(isDisplay)(head);
+      switchDisplay(isDisplay)(head.parentElement);
       column.forEach(switchDisplay(isDisplay));
       blankColumnCount += 1;
     }
