@@ -12,6 +12,9 @@
 - デイコード
   - [Daycord Blank Column Switcher](https://github.com/yurkth/userscripts/blob/master/daycord/blank.user.js)  
     デイコードで日程を1つも入力していない人の列を非表示にできます。ページ上部のトグルで切り替え可能です。
+- ゆとシート
+  - [YTSheet Initializer](https://github.com/yurkth/userscripts/blob/master/ytsheet/init.user.js)  
+    ゆとシートでDX3rdのキャラシを新規作成するときに、ステージやコンセントレイトなどのいつも入力するものを自動で入力してくれます。
 
 ## インストール
 
