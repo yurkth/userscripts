@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YTSheet Initializer
 // @namespace    https://github.com/yurkth/userscripts
-// @version      0.1.0
+// @version      0.1.1
 // @description  ゆとシートでDX3rdのキャラシを新規作成するときにいい感じにしてくれる
 // @author       torin
 // @match        https://yutorize.2-d.jp/ytsheet/dx3rd/?mode=blanksheet
@@ -18,7 +18,7 @@
   document.querySelector("select[name=hide]").selectedIndex = 1;
   // 作成レギュレーション
   document.querySelector("input[name=stage]").value = "基本ステージ";
-  document.querySelector("input[name=history0Exp]").value = 134;
+  document.querySelector("input[name=history0Exp]").value = 4;
   // 閉じてるメニューを開く
   ["status", "lois", "effect", "combo", "items"].forEach(v => { document.querySelector(`details#${v}`).open = true; });
   // 侵蝕率効果表
